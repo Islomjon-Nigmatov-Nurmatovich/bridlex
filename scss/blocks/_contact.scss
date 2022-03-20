@@ -1,0 +1,149 @@
+.contact {
+    padding-bottom: 165px;
+}
+
+.contact__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__title {
+    width: 269px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+}
+
+.contact__text {
+    margin-top: 37px;
+    margin-bottom: 52px;
+    width: 776px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.contact__input {
+    padding: 26px 33px;
+    border-radius: 10px;
+    width: 450px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contact__btn {
+    padding: 26px 82px;
+    background-color: $black;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 12px;
+}
+
+@media only screen and (max-width: $tablet) {
+    .container {
+        max-width: $tablet;
+        margin: 0px auto;
+        padding: 0px 30px;
+    }
+
+    .contact__img {
+        display: none;
+    }
+
+    .contact__span {
+        position: relative;
+
+        &::before {
+            width: 312px;
+            height: 281px;
+            display: block;
+            background-image: url('../../img/contact.svg');
+            content: '';
+        }
+    }
+
+    .contact__title {
+        width: 202px;
+        height: 80px;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 80px;
+    }
+
+    .contact__text {
+        width: 458px;
+        height: 72px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .form {
+        display: flex;
+    }
+
+    .contact__input {
+        width: 323px;
+        height: 60px;
+    }
+    
+    .contact__btn {
+        width: 193px;
+        height: 60px;
+        padding: 19px 56px;
+    }
+}
+
+@media only screen and (max-width: $mini-tablet) {
+    .container {
+        max-width: $mini-tablet;
+        margin: 0px auto;
+        padding: 0px 30px;
+    }
+
+    .contact__title {
+        width: 100%;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 80px;
+    }
+
+    .contact__text {
+        width: 373px;
+        margin: 0px;
+        margin-bottom: 26px;
+        
+    }
+
+    .contact__input {
+        width: 283px;
+    }
+
+    .contact__btn {
+        width: fit-content;
+        padding: 15px 39px;
+        margin-left: 6px;
+    }
+
+    .contact__span {
+        position: relative;
+
+        &::before {
+            width: 233px;
+            height: 210px;
+            display: block;
+            background-image: url('../../img/contact-min-tablet-bg.svg');
+            content: '';
+        }
+    }
+}
+
+
